@@ -1,0 +1,59 @@
+{
+  "name": "node-gui",
+  "version": "1.0.0",
+  "main": "src/main.tsx",
+  "repository": "git@github.com:Elindorath/node-gui.git",
+  "author": "Joachim Westphal <elindorath@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "18.11.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development webpack serve --config webpack.config.ts --mode development",
+    "build": "NODE_ENV=production webpack --mode production --progress",
+    "lint": "eslint .",
+    "type-check": "tsc --pretty"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "colorjs.io": "^0.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.8",
+    "@types/node": "^18.11.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "@vanilla-extract/webpack-plugin": "^2.2.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-canonical": "^3.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "react-refresh": "^0.14.0",
+    "style-loader": "^3.3.1",
+    "ts-node": "^10.9.1",
+    "type-fest": "^3.1.0",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
